@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sko/sko.css">
+    <script src="dang.js" defer></script>
+    <title>Опасные зоны в Северном Казахстане</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        .weather-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .weather-card h3 {
+            margin: 0 0 10px;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="headers">
+            <li><a href="../home/index.html">Главная</a></li>
+            <li class="submenu" id="skoMenu">
+                <a href="#">Северный Казахстан</a>
+                <ul class="submenu-content" id="skoSubMenu">
+                    <li><a href="../sko/sko.html">Петропавловск</a></li>
+                    <li><a href="../dangerous/dang.html">Опасные зоны</a></li>
+                </ul>
+            </li>
+            <li><a href="../kz/kz.html">Данные по Казахстану</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Опасные зоны в Северном Казахстане</h1>
+    </header>
+    <main>
+        <section id="danger-zones">
+            <h2>Температура в населённых пунктах и опасные зоны Северо-Казахстанской области</h2>
+            <div id="danger-zones-sko">
+                <!-- Здесь будет отображаться информация об опасных зонах в Северном Казахстане -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Контакты поддержки</h2>
+            <p>Email: info@dangerzonesystem.com</p>
+            <p>Телефон: +77056101182 / +77761229953</p>
+        </section>
+        <p>&copy; 2024 Аналитическая система мониторинга опасных зон by ITshechka</p>
+    </footer>
+</body>
+</html>

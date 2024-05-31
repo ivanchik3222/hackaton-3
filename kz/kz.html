@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sko/sko.css">
+    <script src="../kz/kz.js" defer></script>
+    <title>Метеоданные и Опасные зоны в Казахстане</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .weather-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .weather-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+        .weather-card h3 {
+            margin-top: 0;
+        }
+        .weather-card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="headers">
+            <li><a href="../home/index.html">Главная</a></li>
+            <li class="submenu" id="skoMenu">
+                <a href="#">Северный Казахстан</a>
+                <ul class="submenu-content" id="skoSubMenu">
+                    <li><a href="#">Метеоданные</a></li>
+                    <li><a href="sko-danger-zones.html">Опасные зоны</a></li>
+                </ul>
+            </li>
+            <li><a href="../kz/kz.html">Данные по Казахстану</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Метеоданные и Опасные зоны в Казахстане</h1>
+    </header>
+    <main>
+        <section id="danger-zones">
+            <h2>Погода и Опасные зоны в Казахстане</h2>
+            <div id="danger-zones-sko">
+                <!-- Здесь будет отображаться информация об опасных зонах в Северном Казахстане -->
+            </div>
+        </section>
+        <section class="weather-container">
+            <div class="weather-card" id="weather-data-ptr">
+                <h3>Petropavlovsk</h3>
+                <p>Загрузка данных...</p>
+            </div>
+            <div class="weather-card" id="weather-data-ast">
+                <h3>Astana</h3>
+                <p>Загрузка данных...</p>
+            </div>
+            <div class="weather-card" id="weather-data-alm">
+                <h3>Almaty</h3>
+                <p>Загрузка данных...</p>
+            </div>
+            <div class="weather-card" id="weather-data-oral">
+                <h3>Oral</h3>
+                <p>Загрузка данных...</p>
+            </div>
+            <div class="weather-card" id="weather-data-sem">
+                <h3>Semey</h3>
+                <p>Загрузка данных...</p>
+            </div>
+            <div class="weather-card" id="weather-data-shym">
+                <h3>Shymkent</h3>
+                <p>Загрузка данных...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Контакты поддержки</h2>
+            <p>Email: info@dangerzonesystem.com</p>
+            <p>Телефон: +77056101182 / +77761229953</p>
+        </section>
+        <p>&copy; 2024 Аналитическая система мониторинга опасных зон by ITshechka</p>
+    </footer>
+</body>
+</html>
