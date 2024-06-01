@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request, render_template
+from my_script import main_api
 
 app = Flask(__name__)
 
@@ -17,6 +18,10 @@ def kz():
 @app.route("/dang")
 def dang():
     return render_template('dang.html')
+
+@app.route("/api")
+def api():
+    return jsonify({'temp': main_api()})
 
 if __name__ == '__main__':
     app.run(debug=True)
