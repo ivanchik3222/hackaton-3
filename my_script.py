@@ -25,10 +25,14 @@ def main_api():
         target_date = datetime.now()- timedelta(days=i)
         days_before.append(get_weather_for_date(api_key, city, target_date))
 
-    counter = 0
+    counter = []
     for i in range(len(days_before)):
         if i != 0:
-            counter = days_before[i] - days_before[i-1]
+            counter.append( days_before[i] - days_before[i-1])
+    # print(sum(counter))
+    # print(len(counter))
+    sr = sum(counter)
 
-    return days_before[-1] + counter
+    return round(sr + days_before[-1],2)
 
+print(main_api())
