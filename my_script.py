@@ -12,12 +12,8 @@ def get_weather_for_date(api_key, city, target_date):
     data = response.json()
 
     if 'error' in data:
-        print("Ошибка: ", data['error']['message'])
-        return
+        return data['error']['message']
 
-    # forecast = data['forecast']['forecastday'][0]['day']
-    # print(f"Дата: {target_date.strftime('%Y-%m-%d')}")
-    # print(f"температура: {forecast['avgtemp_c']}°C")
     return data['forecast']['forecastday'][0]['day']['avgtemp_c']
 
 def main_api():
@@ -25,7 +21,7 @@ def main_api():
     city = 'Petropavlovsk'
     days_before = []
 
-    for i in range(1,10)[::-1]:
+    for i in range(1,5)[::-1]:
         target_date = datetime.now()- timedelta(days=i)
         days_before.append(get_weather_for_date(api_key, city, target_date))
 
